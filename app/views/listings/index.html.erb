@@ -1,2 +1,9 @@
-<h1>Listings#index</h1>
-<p>Find me in app/views/listings/index.html.erb</p>
+<h1>All Listings</h1>
+
+<% @listings.each do |listing| %>
+
+  <%= listing.title %>
+  <%= listing.price %>
+  <%= listing.description %><br />
+
+<% end %>
