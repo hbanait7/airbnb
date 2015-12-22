@@ -56,5 +56,7 @@ group :development, :test do
 
   gem 'better_errors'
 
+  gem 'devise'
+
 end
 
