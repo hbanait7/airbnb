@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
-  devise_for :users
   root 'listings#index'
+  
+  devise_for :users
+
+  resources :users, only: [:show]
 
   resources :listings
 
